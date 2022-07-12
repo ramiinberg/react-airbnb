@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-grid {
+  margin-top: 1em;
+  max-width: 400px;
+  align-self: center;
+}
+
+h1, h3 {
+  align-self: flex-start;
+  padding: 1em;
+  margin: 0;
+}
