@@ -14,10 +14,3 @@ const Card = ({ img, rating, reviewCount, location, title, price}) => (
 )
 
 export default Card
-
-// img={katieImage} 
-//         rating={'5.0'} 
-//         reviewCount={6} 
-//         country='USA' 
-//         title='Life Lessons with Katie Zaferes'
-//         price={136}

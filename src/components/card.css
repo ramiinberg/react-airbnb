@@ -1,6 +1,10 @@
 .card {
   padding-left: 1em;
   width: 175px;
+  flex: 0 0 auto;        
+  display: flex;         
+  flex-direction: column;
+  font-size: 12px;
 }
 
 .card-info {
@@ -13,6 +17,11 @@
   margin: 0
 }
 
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .card-image {
   width: 100%;
   border-radius: 9px;
@@ -20,6 +29,10 @@
 
 .card-star {
   height: 14px;
+}
+
+.card-price {
+  margin-top: auto;
 }
 
 .bold-text {
