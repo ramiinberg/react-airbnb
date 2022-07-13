@@ -1,7 +1,9 @@
 import star from '../images/star.png'
 import './card.css'
 
-const Card = ({ img, rating, reviewCount, location, title, price, openSpots }) => {
+const Card = props => {
+  const { openSpots, location, coverImg: img, stats, title, price } = props.data
+  const { rating, reviewCount } = stats
   let badgeText
   if(openSpots === 0) {
     badgeText = 'SOLD OUT'

@@ -13,13 +13,7 @@ function App() {
         {data.map(card => (
           <Card
             key={card.id}
-            title={card.title}
-            price={card.price}
-            img={card.coverImg}
-            reviewCount={card.stats.reviewCount}
-            rating={card.stats.rating}
-            location={card.location}
-            openSpots={card.openSpots}
+            data={card}
           />
         ))}
       </section>
