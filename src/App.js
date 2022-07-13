@@ -19,6 +19,7 @@ function App() {
             reviewCount={card.stats.reviewCount}
             rating={card.stats.rating}
             location={card.location}
+            openSpots={card.openSpots}
           />
         ))}
       </section>
