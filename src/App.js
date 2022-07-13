@@ -1,23 +1,26 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Card from './components/Card'
-import katieImage from './images/katie-zaferes.png'
+import data from './data'
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Card 
-        img={katieImage} 
-        rating={'5.0'} 
-        reviewCount={6} 
-        country='USA' 
-        title='Life Lessons with Katie Zaferes'
-        price={136}
-      />
+      {data.map(card => (
+        <Card 
+          title={card.title}
+          price={card.price}
+          img={card.coverImg}
+          reviewCount={card.stats.reviewCount}
+          rating={card.stats.rating}
+          location={card.location}
+        />
+      ))}
     </>
   )
 }
 
 export default App
+
