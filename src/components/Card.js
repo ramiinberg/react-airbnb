@@ -2,7 +2,8 @@ import star from '../images/star.png'
 import './card.css'
 
 const Card = props => {
-  const { openSpots, location, coverImg: img, stats, title, price } = props.data
+  console.log('props', props)
+  const { openSpots, location, coverImg: img, stats, title, price } = props
   const { rating, reviewCount } = stats
   let badgeText
   if(openSpots === 0) {

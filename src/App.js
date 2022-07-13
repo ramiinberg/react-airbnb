@@ -13,7 +13,7 @@ function App() {
         {data.map(card => (
           <Card
             key={card.id}
-            data={card}
+            {...card}
           />
         ))}
       </section>
